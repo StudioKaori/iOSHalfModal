@@ -16,12 +16,12 @@ class ViewController: UIViewController {
         button.backgroundColor = .black
         button.layer.cornerRadius = 8.0
         button.translatesAutoresizingMaskIntoConstraints = false
-        MSLayoutConstraint.activate([
+        NSLayoutConstraint.activate([
             button.heightAnchor.constraint(equalToConstant: 30.0),
             button.widthAnchor.constraint(equalToConstant: 60.0)
         ])
         return button
-    }
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
