@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         
         view.addSubview(button)
         NSLayoutConstraint.activate([
-            button.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             button.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
         
@@ -37,6 +37,9 @@ class ViewController: UIViewController {
     }
 
 
-    
+    @objc
+    private func tapButton() {
+
+    }
 }
 
