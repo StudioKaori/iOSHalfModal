@@ -39,7 +39,11 @@ class ViewController: UIViewController {
 
     @objc
     private func tapButton() {
-
+        let vc = ModalViewController(nibName: nil, bundle: nil)
+        if let sheet = vc.sheetPresentationController {
+            sheet.detents = [.medium(), .large()]
+        }
+        present(vc, animated: true, completion: nil)
     }
 }
 
