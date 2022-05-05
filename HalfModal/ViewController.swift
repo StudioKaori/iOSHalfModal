@@ -26,8 +26,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        view.addSubview(button)
+        NSLayoutConstraint.activate([
+            button.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            button.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+        
+        button.addTarget(self, action: #selector(tapButton), for: .touchUpInside)
     }
 
 
+    
 }
 
